@@ -3,6 +3,12 @@ header {
     background-color: seagreen;
     font-family: Helvetica, sans-serif;
 }
+div {
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+}
 h2 {
     font-family: 'Shadows Into Light', cursive;
     color: black;
@@ -17,10 +23,15 @@ h3 {
     font-size: 42px;
     text-align: center;
 }
+@keyframes car {
+    from {background-color: seagreen;}
+    to {background-color: papayawhip;}
+}
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    animation-name: car;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
-
-
